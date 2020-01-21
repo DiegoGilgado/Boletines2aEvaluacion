@@ -15,7 +15,16 @@ public class Persona {
 		public  int estatura;
 		public  LocalDate fechana;
 		
+	public Persona (String nombre, String apellido, LocalDate fechana) {
+		this.nombre=nombre;
+		this.apellido=apellido;
+		this.fechana=fechana;
 		
+		
+	}
+	
+	public Persona () {
+	}
 	public void MostarDatos() {
 		//metodos
 		

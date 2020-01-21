@@ -29,6 +29,10 @@ public class Ejercicio1 {
 		p4.estatura=127;
 		p4.fechana=LocalDate.of(2010, 05, 01);
 		
+		LocalDate fna=LocalDate.of(2000, 06, 12);
+		LocalDate fna2=LocalDate.of(1976, 8, 23);
+		Persona p5= new Persona("Lorena", "Remeseiro Neira",fna );
+		Persona p6= new Persona("Patricia", "Seoane Álvarez",fna2 );
 		
 		p1.MostarDatos();
 		System.out.println("edad :" + p1.ObtenerEdad() );
@@ -38,6 +42,10 @@ public class Ejercicio1 {
 		p3.MostarDatos();
 		System.out.println();
 		p4.MostarDatos();
+		System.out.println();
+		p5.MostarDatos();
+		System.out.println();
+		p6.MostarDatos();
 	}
 
 }
