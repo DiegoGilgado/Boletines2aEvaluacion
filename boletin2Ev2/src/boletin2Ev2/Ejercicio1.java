@@ -38,14 +38,51 @@ public class Ejercicio1 {
 		System.out.println("edad :" + p1.ObtenerEdad() );
 		System.out.println();		
 		p2.MostarDatos();
-		System.out.println();
+		System.out.println("edad :" + p2.ObtenerEdad() );
 		p3.MostarDatos();
+		System.out.println("edad :" + p3.ObtenerEdad() );
 		System.out.println();
 		p4.MostarDatos();
+		System.out.println("edad :" + p4.ObtenerEdad() );
 		System.out.println();
 		p5.MostarDatos();
+		System.out.println("edad :" + p5.ObtenerEdad() );
 		System.out.println();
 		p6.MostarDatos();
+		System.out.println("edad :" + p6.ObtenerEdad() );
+		
+		
+		/*Persona [] arrayPersonas=new Persona [6];
+		arrayPersonas[0]=p1;
+		arrayPersonas[1]=p2;
+		*/
+		Persona [] arrayPersonas= {p1,p2,p3,p4,p5,p6};
+		
+		Persona personaMayorEdad=obtenerPersonaMayorEdad(arrayPersonas);
+		personaMayorEdad.MostarDatos();
+		
+		
+	}//main
+	
+	
+	private static Persona obtenerPersonaMayorEdad(Persona[] array)
+	{
+		
+		Persona mayorPersona=array[3];
+		
+		for(Persona person:array)
+		{
+			if(mayorPersona.ObtenerEdad()<person.ObtenerEdad())
+			{
+				mayorPersona=person;
+			}
+		}
+		
+		return mayorPersona;
+		
 	}
+	
+	
+	
 
 }
