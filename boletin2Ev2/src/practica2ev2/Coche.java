@@ -2,9 +2,12 @@ package practica2ev2;
 
 public class Coche extends Vehiculo {
 
-	private int numeroplazas;
+	private int numeroPlazas;
 	
-	public Coche(String matricula, String tipo, int vMaxima, int numeroPlazas){
-		
+	public Coche(String matricula, String tipo, int velocidadMaxima, int numeroPlazas){
+		this.setMatricula(matricula);
+		this.setTipo(tipo);
+		this.setVelocidadMaxima(velocidadMaxima);
+		this.numeroPlazas=numeroPlazas;
 	}
 }
