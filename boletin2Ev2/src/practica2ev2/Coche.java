@@ -10,4 +10,12 @@ public class Coche extends Vehiculo {
 		this.setVelocidadMaxima(velocidadMaxima);
 		this.numeroPlazas=numeroPlazas;
 	}
+	@Override
+	public void mostrarDatosVehiculo(){
+		super.mostrarDatosVehiculo();
+		System.out.println(numeroPlazas);
+		
+	}
+	
+	
 }
