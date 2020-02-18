@@ -11,24 +11,12 @@ public class Vehiculo {
 	
 	//constr
 	
-	public void mostrarDatosVehiculo(){
+	public void mostrarDatos(){
 		System.out.println(matricula);
 		System.out.println(tipo);
 		System.out.println(velocidadMaxima);
 	}
 	
-	public void mostrarDatosCoche(){
-		System.out.println(matricula);
-		System.out.println(tipo);
-		System.out.println(velocidadMaxima);
-	}
-	
-	public void mostrarDatosCamion(){
-		System.out.println(matricula);
-		System.out.println(tipo);
-		System.out.println(velocidadMaxima);
-		System.out.println();
-	}
 	
 	
 	//metodos

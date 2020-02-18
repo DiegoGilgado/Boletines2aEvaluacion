@@ -11,11 +11,12 @@ public class Coche extends Vehiculo {
 		this.numeroPlazas=numeroPlazas;
 	}
 	@Override
-	public void mostrarDatosVehiculo(){
-		super.mostrarDatosVehiculo();
+	public void mostrarDatos(){
+		super.mostrarDatos();
 		System.out.println(numeroPlazas);
 		
 	}
+	
 	
 	
 }

@@ -9,5 +9,13 @@ public class Camion extends Vehiculo {
 		this.setTipo(tipo);
 		this.setVelocidadMaxima(velocidadMaxima);
 		this.remolque=remolque;
+		
+	}
+	
+	@Override
+	public void mostrarDatos(){
+		super.mostrarDatos();
+		System.out.println(remolque);
+		
 	}
 }
