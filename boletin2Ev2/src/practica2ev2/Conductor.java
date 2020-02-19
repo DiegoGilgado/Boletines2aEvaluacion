@@ -8,4 +8,8 @@ public class Conductor {
 		this.dni=dni;
 		this.nombre=nombre;
 	}
+	@Override
+	public String toString(){
+		return "DNI de conductor "+ dni + "Nombre de conductor "+nombre;
+	}
 }

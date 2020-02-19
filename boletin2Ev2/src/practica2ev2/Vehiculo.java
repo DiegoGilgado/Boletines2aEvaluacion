@@ -12,11 +12,19 @@ public class Vehiculo {
 	//constr
 	
 	public void mostrarDatos(){
-		System.out.println(matricula);
-		System.out.println(tipo);
-		System.out.println(velocidadMaxima);
+		System.out.println("Matricula: "+matricula);
+		System.out.println("Tipo: "+tipo);
+		System.out.println("Velociad Máxima: "+velocidadMaxima);
+		System.out.println("Segundo conductor "+conductor);
+		
 	}
 	
+	
+	public Vehiculo(String matricula,String tipo, int velocidadMaxima){
+		this.matricula=matricula;
+		this.tipo=tipo;
+		this.velocidadMaxima=velocidadMaxima;
+	}
 	
 	
 	//metodos
@@ -57,5 +65,7 @@ public class Vehiculo {
 	public void setConductor(Conductor conductor) {
 		this.conductor=conductor;
 	}
-	
+	public Vehiculo() {
+		
+	}
 }

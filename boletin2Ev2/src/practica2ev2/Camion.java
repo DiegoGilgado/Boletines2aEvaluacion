@@ -12,10 +12,20 @@ public class Camion extends Vehiculo {
 		
 	}
 	
+	public Remolque getRemolque()
+	{
+		return this.remolque;
+	}
 	@Override
 	public void mostrarDatos(){
 		super.mostrarDatos();
-		System.out.println(remolque);
+		System.out.println("Remolque: "+remolque);
 		
+	}
+	
+	
+	public Camion(String matricula, String tipo, int velocidadMaxima, int altura ) {
+		super(matricula, tipo, velocidadMaxima);
+		this.altura=altura;
 	}
 }

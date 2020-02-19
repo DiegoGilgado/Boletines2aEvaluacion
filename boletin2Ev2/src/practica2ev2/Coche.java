@@ -13,7 +13,7 @@ public class Coche extends Vehiculo {
 	@Override
 	public void mostrarDatos(){
 		super.mostrarDatos();
-		System.out.println(numeroPlazas);
+		System.out.println("Nº plazas: " + numeroPlazas);
 		
 	}
 	
