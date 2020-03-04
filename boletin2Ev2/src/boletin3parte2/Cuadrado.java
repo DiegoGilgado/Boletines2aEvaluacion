@@ -1,16 +1,19 @@
 package boletin3parte2;
 
-public class Cuadrado extends Figura{
-	private double lado;
-	@Override
-	protected void calcularArea() {
-		
-	}
+public class Cuadrado extends Rectangulo{
+	
 	public double getLado() {
-		return lado;
+		return getBase();
 	}
 
 	public void setLado(double lado) {
-		this.lado=lado;
+		this.setAltura(lado);
+		this.setBase(lado);
 	}
+	
+	public Cuadrado(double lado){
+		super(lado, lado);
+	}
+	
+	
 }
